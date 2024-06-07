@@ -25,6 +25,9 @@
 .footer-content-center h2, .footer-content-right h2{
     color: white; 
 }
+.footer-social-icons{
+    margin-top: 20px;
+}
 .footer-social-icons img{
     width: 40px;
     margin-right: 15px;
@@ -39,4 +42,14 @@
 .footer-content-left h1{  
     color: tomato; 
     font-size: 40px;
+}
+@media (max-width:750px){
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    .footer-copyright{
+        text-align: center;
+    }
 }
