@@ -5,8 +5,7 @@ import Sidebar from './components/Sidebar/Sidebar'
 
 const App = () => {
   return (
-    <div>
-       Helo
+    <div> 
        <Navbar/>
        <hr />
        <div className="app-content">
