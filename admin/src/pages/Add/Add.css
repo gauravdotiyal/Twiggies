@@ -4,6 +4,7 @@
     margin-top: 50px;
     color: #6d6d6d;
     font-size: 16px;
+    /* color: black; */
 }
 .add form{
     gap: 20px; 
@@ -23,9 +24,10 @@
     gap: 30px;
 }
 .add-category-price select, .add-category-price input{
-    max-width: 120px;
-    padding: 10px;
+    max-width: 120px; 
+    padding: 10px; 
 }
+ 
 .add-btn{
     max-width: 120px;
     border: none;
