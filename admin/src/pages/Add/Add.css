@@ -14,7 +14,7 @@
     width: 120px;
 }
 .add-product-name, .add-product-description{
-    width: max(50%,900px);
+    width: max(50%,400px);
 }
 .add-product-name input, .add-product-description textarea{
     padding: 10px;

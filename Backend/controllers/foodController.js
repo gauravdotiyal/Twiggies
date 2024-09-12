@@ -15,7 +15,7 @@ const addFood=async(req,res)=>{
 
     try{
         await food.save();
-        res.json({success:true,message:"Food Added"})
+        res.json({success:true,message:"Food Added Succesfully"})
     }
     catch(err){
         console.log(err)
@@ -48,7 +48,7 @@ const removeFood=async(req,res)=>{
     // for removing from mongodb 
     await foodModel.findByIdAndDelete(req.body.id); 
 
-    res.json({success:true,message:"Food Removed"})
+    res.json({success:true,message:"Food Removed Successfully"})
    }
    catch(err){
       console.log(err);
