@@ -12,12 +12,21 @@ const Orders = ({url}) => {
    const fetchAllOrder=async()=>{
         const response=await axios.get(url+"/api/order/list");
         if(response.data.success){
-          setOrders(response.data.data);
-          console.log(response.data.data);
+          setOrders(response.data.data); 
         }
         else{
           toast.error("Error");
         }
+   }
+
+   const statusHandler=async(event,orderId)=>{
+         const response=await axios.post(url+"/api/order/status",{
+          orderId,
+          status:event.target.value
+         })
+         if(response.data.success){
+           await fetchAllOrder();
+         }
    }
 
    useEffect(()=>{
@@ -50,7 +59,7 @@ const Orders = ({url}) => {
                 </div>
                  <p>Items:{order.items.length}</p>
                  <p>${order.amount}</p>
-                 <select>
+                 <select onChange={(event)=>statusHandler(event,order._id)} value={order.status}>
                    <option value="Food Processing">Food Processing</option>
                    <option value="Out For Delivery">Out For Delivery</option>
                    <option value="Delivered">Delivered</option>
@@ -63,3 +72,4 @@ const Orders = ({url}) => {
 }
 
 export default Orders
+ 
