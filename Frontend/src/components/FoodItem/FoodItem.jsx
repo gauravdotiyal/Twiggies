@@ -3,7 +3,7 @@ import "./FoodItem.css";
 import { assets } from "../../assets/assets";
 import { StoreContext } from "../../context/StoreContext";
 
-const FootItem = ({ id, name, price, description, image }) => {
+const FoodItem = ({ id, name, price, description, image }) => {
   //  const [itemCount,setItemCount]=useState(0)
   const { cartItems, addToCart, removeFromCart, url } = useContext(StoreContext);
 
@@ -47,4 +47,4 @@ const FootItem = ({ id, name, price, description, image }) => {
   );
 };
 
-export default FootItem;
+export default FoodItem;
