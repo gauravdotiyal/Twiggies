@@ -7,7 +7,7 @@ const Header = () => {
     <div className='header'>
          <div className="header-contents">
             <h2>Order Your Favourite Food Here</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis dolor, ipsa voluptates adipisci esse quos quo dignissimos sunt quidem odio dicta possimus aspernatur laudantium. </p>
+            <p>Our menu features a diverse selection of delicious dishes made with fresh ingredients. Enjoy classic favorites like pizzas with a variety of toppings, juicy burgers, flavorful pastas, and fresh salads. We also offer healthy options including vegan and gluten-free meals, plus a range of mouth-watering desserts and refreshing beverages to complement your order. </p>
             <button>View Menu</button>
          </div>
     </div>
