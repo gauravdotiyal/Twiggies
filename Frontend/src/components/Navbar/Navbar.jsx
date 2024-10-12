@@ -28,7 +28,7 @@ const Navbar = ({ setShowLogin }) => {
       <div className="logo">
         <Link exact to="/">
           {" "}
-          <h1>twiggies</h1> 
+          <h1>Twiggies</h1> 
         </Link>
       </div>
 

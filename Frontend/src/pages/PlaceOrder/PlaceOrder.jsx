@@ -111,8 +111,7 @@ const PlaceOrder = () => {
               <b>Total</b>
               <b>${getTotalCartAmount()===0?0:getTotalCartAmount() + 2}</b>
             </div>
-          </div>
-
+          </div> 
           <button type="submit">
             PROCEED TO PAYMENT
           </button>
