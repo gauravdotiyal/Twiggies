@@ -8,7 +8,8 @@ const stripe =new Stripe(process.env.STRIPE_SECRET_KEY);
 const placeOrder =async(req,res)=>{
     
     // This port number should be same in which frontend folder is opened
-    const frontend_url="https://twiggies.onrender.com"
+    const frontend_url="http://localhost:5173/"
+    // const frontend_url="https://twiggies.onrender.com"
 
     try {
         const newOrder=new orderModel({
@@ -29,7 +30,7 @@ const placeOrder =async(req,res)=>{
                 product_data:{
                     name:item.name
                 },
-                unit_amount:item.price*100*80
+                unit_amount:item.price*100,
               },
 
               quantity:item.quantity
@@ -41,7 +42,7 @@ const placeOrder =async(req,res)=>{
                 product_data:{
                     name:"Delivery Charges"
                 },
-                unit_amount:2*100*80,
+                unit_amount:2*100,
             }, 
             quantity:1
         })
