@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+ 
+
 .navbar{
     padding: 20px;
     display: flex;
@@ -7,10 +9,10 @@
     /* background-color: blue; */
 }
 .navbar .logo{
-    width: 150px;
-    color: tomato; 
+    width: 190px;
+    color: tomato;  
     font-family: "Pacifico", cursive;
-    font-size: 20px;
+    font-size: 20px; 
 }
 .navbar-menu{
     display: flex;
