@@ -84,7 +84,7 @@ STRIPE_SECRET_KEY=your_stripe_secret_key
    cd frontend
    npm start
    ```
-3. Open your browser and visit: [http://localhost:3000](http://localhost:3000)
+3. Open your browser and visit: [https://twiggies.onrender.com/](https://twiggies.onrender.com/)
 
 ---
 
